@@ -25,7 +25,12 @@ function App() {
     <div className="App">
       <h1>Buscador de productos de Mercado Libre</h1>
       <SearchBar onSearch={handleSearch} />
-      {loading && <p>Cargando productos...</p>}
+      {loading && (
+        <div className="loading">
+          <div className="spinner"></div>
+          Cargando productos...
+        </div>
+      )}
       {error && <p>{error}</p>}
       <ProductList products={products} />
     </div>
