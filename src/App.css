@@ -1,6 +1,8 @@
 .App {
   text-align: center;
-  background-color: #FCE601;
+  background: linear-gradient(to bottom, #FCE601, #FFFFFF);
+  min-height: 100vh;
+  padding: 20px;
 }
 
 .App-logo {
@@ -37,12 +39,15 @@
 .product-item {
   border: 1px solid #ddd;
   padding: 10px;
-  box-shadow: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   padding: 15px;
   background-color: #fff;
   border-radius: 15px;
   text-align: center;
   transition: transform 0.2s;
+  background: linear-gradient(to top, #03a9f4, #FFFFFF);
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
 }
 .product-item:hover {
   transform: scale(1.05);
@@ -57,7 +62,7 @@
   color: #333;
 }
 .product-item p {
-  font-size: 16px;
+  font-size: 26px;
   color: #666;
 }
 .product-item button {

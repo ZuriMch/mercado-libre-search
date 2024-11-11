@@ -11,7 +11,7 @@ const ProductList = ({ products }) => {
         <div key={product.id} className="product-item">
           <img src={product.thumbnail} alt={product.title} />
           <h2>{product.title}</h2>
-          <p>Precio: ${product.price}</p>
+          <p><strong>Precio: ${product.price}</strong></p>
         </div>
       ))}
     </div>

@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Buscador de productos de Mercado Libre</h1>
+      <h1>Buscador de Mercado Libre</h1>
       <SearchBar onSearch={handleSearch} />
       {loading && (
         <div className="loading">
